@@ -1,9 +1,9 @@
 ---
 /**
- * * Contact section for the website
+ * Contact section for the website
  */
 
-import { Image } from "astro:assets";
+ import { Image } from "astro:assets";
 
 // components
 import ContactForm from "@components/Forms/ContactForm.astro";
@@ -19,8 +19,7 @@ import ringsImage from "@assets/images/tulipanes.webp";
 
 <section
   id="contact"
-  class="mx-auto max-w-md scroll-mt-10 px-4 py-8 md:max-w-6xl md:py-12"
-  class:list={[className]}
+  class={`mx-auto max-w-md scroll-mt-10 px-4 py-8 md:max-w-6xl md:py-12 ${className}`}
 >
   <h2 class="h2 md:px-12 lg:text-6xl">Contactame</h2>
   <div class="grid gap-y-10 md:grid-cols-2">
@@ -28,7 +27,7 @@ import ringsImage from "@assets/images/tulipanes.webp";
       <p class="description text-lg">
         Tienes algunas preguntas para realizar tu cotizacion?,
         Aqui estoy para ayudarte...
-        Comunicate conmigo atravez de este link, y con gusto te atiendo
+        Comunicate conmigo a través de este link, y con gusto te atiendo
       </p>
       <div class="mx-auto mt-8 aspect-square overflow-hidden">
         <Image
@@ -39,11 +38,19 @@ import ringsImage from "@assets/images/tulipanes.webp";
           class="h-full w-full object-cover"
         />
       </div>
+      <div class="mt-4 text-center">
+        <a
+          href="https://w.app/rcsfhy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-green-400 text-black py-4 px-6 rounded-lg shadow-lg"
+        >
+          Link de mi WhatsApp
+        </a>
+      </div>
     </div>
     <div class="md:pl-20 md:pr-12">
       <ContactForm />
     </div>
   </div>
 </section>
-
-

@@ -1,15 +1,25 @@
 ---
-// components
-import Button from "@components/Button/Button.astro";
+import { Image } from "astro:assets";  // Importación correcta de Image.
+import Button from "@components/Button/Button.astro";  // Importación correcta del componente Button.
+import qrImage from "@assets/images/RubiWhats.png";  // Ruta correcta de la imagen QR.
 ---
 
 <form
   id="contact-form"
   name="contact form"
   class="flex h-full flex-col justify-between gap-4"
+>
   <div class="flex">
-    <Button variant="primary" type="submit" class="w-full px-10 md:w-fit"
-      >Enviar</Button
-    >
+    <div class="mx-auto">
+      <p class="text-center text-lg">Escanea el código QR para contactarnos por WhatsApp</p>
+      <div class="mt-4 text-center">
+        <Image
+          src={qrImage}
+          alt="QR code to contact on WhatsApp"
+          class="w-100 max-w-lg h-65 object-contain mx-auto"  
+        />
+      </div>
+    </div>
   </div>
 </form>
+
