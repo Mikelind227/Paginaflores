@@ -1,6 +1,6 @@
 ---
-title: JOSÉ & MELANIE
-testimonial: Jenna has a way of making us feel like the only people in the room. The photos she delivered were beyond our expectations, capturing the joy, love, and beauty of our special day in a way that we will treasure forever.
-image: ./couple-8-crop.jpg
+title: Ramo Buchon
+testimonial: Ramo buchón con frase 100 rosas ( puedes elegir color de rosa a disponibilidad de tonos )  frase en listón de tu elección
+image: "@assets/images/photographer-min.jpg"
 order: 1
 ---
