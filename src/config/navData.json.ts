@@ -17,7 +17,7 @@ const navConfig: navItem[] = [
     link: "/",
   },
   {
-    text: "Portafolios",
+    text: "Galeria",
     link: "/portfolio",
   },
   {
